@@ -1,4 +1,4 @@
-# This script fetches historical trade data from the Kalshi API and saves it to a CSV file.
+# This script fetches historical trade data from the Kalshi API and saves it to a CSV file
 
 import csv 
 import requests
