@@ -1,3 +1,5 @@
+# This script fetches historical trade data from the Kalshi API and saves it to a CSV file.
+
 import csv 
 import requests
 import time
@@ -14,11 +16,6 @@ load_dotenv(find_dotenv())
 # These are the API credentials and configuration variables
 API_KEY = os.getenv("API_KEY")
 RSA_KEY_PATH = os.getenv("RSA_KEY_PATH", "./kalshi_private2.key") # Make sure your RSA Private is in a .key file and called here 
-# if not os.path.exists(RSA_KEY_PATH):
-#     raise FileNotFoundError(
-#         f"Key file not found at: '{RSA_KEY_PATH}'. "
-#         f"Ensure 'kalshi_private2.key' is in your project root or set correctly in .env."
-#     )
 TARGET_TICKER = "KXPERSONPRESMAM-45" 
 OUTPUT_FILE = "kalshi_trades.csv"  
 BASE_URL = "https://external-api.kalshi.com" # This will vary for the type of data you are looking for (historical or live data)

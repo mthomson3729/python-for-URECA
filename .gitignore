@@ -1,0 +1,18 @@
+# Environment files (contains your API keys and secrets)
+.env
+*.env
+*.csv
+
+# RSA private keys & certificates
+*.pem
+*.key
+id_rsa
+id_rsa*
+
+# Python bytecode / cache
+__pycache__/
+*.pyc
+
+# Local IDE setup (optional but recommended)
+.vscode/
+.idea/
